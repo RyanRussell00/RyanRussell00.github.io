@@ -1,0 +1,12 @@
+body {
+    max-width: 100% !important;
+}
+
+.title {
+    text-align: center;
+    background-image: linear-gradient(right, silver, gray); 
+}
+
+.title h1 {
+    font-size: 3em;
+}
