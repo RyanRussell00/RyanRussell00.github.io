@@ -2,9 +2,36 @@ body {
     max-width: 100% !important;
 }
 
-.title {
+.header {
+    font-size: 3em;
     text-align: center;
-    background-image: linear-gradient(right, silver, gray); 
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+    color: black;
+}
+
+a {
+    color: darkblue;
+}
+
+.title-bg {
+    display: flex;
+    text-align: center;
+}
+
+.title-info {
+    text-align: left;
+    padding: 0 2%;
+}
+
+.title img {
+    float: left;
+    width: 40%;
+    height: auto;
+    border: 2px solid transparent;
+    border-radius: 150px;
+    overflow: hidden;
 }
 
 .title h1 {
