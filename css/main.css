@@ -24,6 +24,7 @@ body {
 
 h1, h2, h3, h4, h5, h6, p, ul {
     color: black;
+    word-break: keep-all;
 }
 
 a {
@@ -40,7 +41,7 @@ a {
 }
 
 .title-left {
-    max-width: 60%;
+    max-width: 50%;
     float: left;
     padding: 0 1%;
 }
@@ -54,7 +55,7 @@ a {
 }
 
 .title-right {
-    max-width: 40%;
+    max-width: 100%;
     float: right;
     text-align: center;
 }
@@ -65,10 +66,49 @@ a {
 }
 
 .title-links a {
-    width: 25%;
+    width: 20%;
 }
 
-button {
+.links a {
+    text-decoration: none !important;
+}
+
+.contact-link {
+    text-align: center;
+    padding: 1% 2%;
+    margin: 0 1%;
+    font-size: 0.9em;
+}
+
+.contact-link:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 2px gray;
+}
+
+.contact-link#linkedin {
+    color: white;
+    background-color: blue;
+    border: none;
+    box-shadow: 1px 0px 2px blue;
+}
+
+.contact-link#email {
+    color: black;
+    background-color: whitesmoke;
+}
+
+.contact-link#phone {
+    color: black;
+    background-color: whitesmoke;
+}
+
+.contact-link#email:hover, .contact-link#phone:hover{
+    transition: 0.1s;
+    color: blue;
+    background-color: white;
+}
+
+.quick-link {
     background-color: whitesmoke;
     border: 1px solid black;
     border-radius: 12px;
@@ -77,30 +117,30 @@ button {
     width: 85%;
 }
 
-button:hover {
+.quick-link:hover {
     transition: 0.3s ease;
     background-color: white;
     cursor: pointer;
 }
 
 #skillsbtn:hover {
-    color: red;
     border: 1px solid red;
 }
 
 #expbtn:hover {
-    color: red;
-    border: 1px solid red;
+    border: 1px solid blue;
 }
 
 #edubtn:hover {
-    color: red;
-    border: 1px solid red;
+    border: 1px solid green;
 }
 
 #certbtn:hover {
-    color: red;
-    border: 1px solid red;
+    border: 1px solid purple;
+}
+
+#portbtn:hover {
+    border: 1px solid orange;
 }
 
 button>a {
@@ -110,13 +150,39 @@ button>a {
 
 .row {
     margin-top: 1%;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.row p {
+    padding: 0 4%;
+}
+
+.row-flex {
+    margin-top: 1%;
     display: flex;
     padding: 0 1%;
     text-align: center;
 }
 
+.row-flex a {
+    text-decoration: none !important;
+    margin: 0 0.5%;
+}
+
+.row-flex img {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+}
+
+.row-flex img:hover {
+    box-shadow: 0px 0px 2px gray;
+}
+
 .column {
-    word-break: break-all;
+    word-break: keep-all;
 }
 
 .w1 {
@@ -131,6 +197,10 @@ button>a {
     width: 33%;
 }
 
+.w4 {
+    width: 25%;
+}
+
 li {
     list-style-type: square;
     font-size: 1.1em;
@@ -139,7 +209,8 @@ li {
 }
 
 .row#skills {
-    border-top: 2px solid red;
+    border-top: 2px solid black;
+    width: 100%;
 }
 
 .row#experience {
@@ -154,13 +225,17 @@ li {
     border-top: 2px solid purple;
 }
 
+.row#portfolio {
+    border-top: 2px solid orange;
+}
+
 .progress {
     padding: 0 1%;
     margin: 2% 1%;
 }
 
 .progress-bar {
-    background-color: #B0BEC5;
+    background-color: gray;
     width: 100%;
     height: 25px;
     border-radius: 4px;
@@ -173,6 +248,8 @@ li {
     color: white;
     position: absolute;
     margin: 0 1%;
+    padding: 3px 0;
+    vertical-align: middle;
 }
 
 .progress-bar-25 {
@@ -209,4 +286,8 @@ li {
 
 .orange {
     background-color: orange;
+}
+
+footer {
+    border-top: 2px solid black;
 }
