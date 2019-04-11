@@ -86,17 +86,13 @@ a {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 1200px) {
-    .quick-link {
-    }
-}
-
 .title-links a {
     width: 20%;
 }
 
 .links {
-    display: inline;
+    display: block;
+    text-align: center;
 }
 
 .links a {
@@ -106,7 +102,8 @@ a {
 .contact-link {
     text-align: center;
     padding: 1% 2%;
-    margin: 0 1%;
+    margin: 1%;
+    width: 100%;
 }
 
 .contact-link:hover {
@@ -348,5 +345,8 @@ footer {
     }
     .row p {
         padding: 0 2%;
+    }
+    .links {
+        width: 100% !important;
     }
 }
