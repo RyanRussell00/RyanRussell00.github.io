@@ -5,7 +5,7 @@ body {
 
 .header {
     text-align: center;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
     padding: 0;
     margin: 1% 0 2% 0;
     max-width: 100vw;
@@ -92,7 +92,6 @@ a {
 
 .links {
     display: block;
-    text-align: center;
 }
 
 .links a {
@@ -103,7 +102,6 @@ a {
     text-align: center;
     padding: 1% 2%;
     margin: 1%;
-    width: 100%;
 }
 
 .contact-link:hover {
@@ -321,11 +319,9 @@ footer {
     .title {
         display: inline;
     }
-    
     .title h1 {
         font-size: 2em;
     }
-    
     .title-left, .title-right {
         max-width: 100%;
     }
@@ -334,7 +330,7 @@ footer {
     }
     .row-flex {
         display: block;
-    } 
+    }
     .column {
         width: 100%;
         margin: 0.5%;
