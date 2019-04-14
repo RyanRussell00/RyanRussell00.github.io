@@ -28,10 +28,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
     word-break: keep-all;
 }
 
-p {
-    font-size: 1.1em;
-}
-
 a {
     color: darkblue;
 }
@@ -63,6 +59,10 @@ a {
     max-width: 100%;
     float: right;
     text-align: center;
+}
+
+.title-right p {
+    padding: 0 3%;
 }
 
 .title-links {
