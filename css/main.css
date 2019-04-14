@@ -217,10 +217,6 @@ button>a {
     width: 25%;
 }
 
-ul {
-    text-align: left;    
-}
-
 li {
     list-style-type: square;
     font-size: 1.1em;
