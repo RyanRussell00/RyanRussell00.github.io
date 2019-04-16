@@ -314,7 +314,7 @@ footer {
         font-size: 2em;
     }
     .title {
-        display: inline;
+        display: block;
     }
     .title h1 {
         font-size: 2em;
@@ -347,5 +347,8 @@ footer {
     }
     .links {
         width: 100% !important;
+    }
+    ul {
+        text-align: left;
     }
 }
