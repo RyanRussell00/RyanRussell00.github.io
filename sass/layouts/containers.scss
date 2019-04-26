@@ -1,1 +1,71 @@
-@import "utils/variables";
+.container {
+    width: 100%;
+    padding: 0.5%;
+    display: inline-block;
+
+    &-2 {
+        width: 50%;
+    }
+
+    &-3 {
+        width: 33%;
+    }
+
+    &-4 {
+        width: 25%;
+    }
+
+    &-left {
+        float: left;
+        max-width: 50%;
+        margin: 3px;
+    }
+
+    &-right {
+        float: right;
+        max-width: 50%;
+        margin: 3px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.inner-container {
+    width: inherit;
+    padding: 0.5%;
+
+    &-flex {
+        display: flex;
+    }
+}
+
+.banner {
+    background-image: url("../images/eightedge019_1.jpeg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 0 !important;
+    margin: 0 !important;
+
+    .text-over-image {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.box {
+    padding: 2% 4%;
+    box-shadow: 0.5px 0.5px 2px black;
+
+    &-light {
+        box-shadow: 0.5px 0.5px 2px white;
+    }
+}

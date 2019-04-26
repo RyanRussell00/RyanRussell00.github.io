@@ -1,16 +1,38 @@
-.nav {
-    top: 0;
-    left: 0;
-    position: fixed;
-    height: 30px;
-    background-color: $nav-color;
-    padding: 0.5% 1%;
-    width: 100%;
-    box-shadow: 0px 3px rgba(0, 0, 0, 0.3);
-    display: block;
-    &__content {
-        vertical-align: middle;
-        text-align: center;
-        color: red;
+$page-colors: ('about-menu': $about-main-color, 'work-menu': $work-main-color,
+'contact-menu':$contact-main-color);
+
+.menu {
+    display: flex;
+    position: relative;
+    padding: 2px 3px;
+    color: white;
+
+    &__item {
+        width: 33%;
+        padding: 1px 2px;
+        margin: 0px 1%;
     }
-} 
+
+    @each $page,
+    $color in $page-colors {
+        ##{$page} {
+            &:after {
+                content: '';
+                display: block;
+                transition: 0.6s ease;
+                width: 0;
+                border-bottom: solid 3px $color;
+            }
+
+            &:hover:after {
+                width: 100%;
+            }
+        }
+
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+}
