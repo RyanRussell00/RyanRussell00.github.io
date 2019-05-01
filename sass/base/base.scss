@@ -16,3 +16,12 @@ body {
         background-color: $bg-light;
     }
 }
+
+.no {
+    &-border {
+        border: none !important;
+    }
+    &-shadow {
+        box-shadow: none !important;
+    }
+}

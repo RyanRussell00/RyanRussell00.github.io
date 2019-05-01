@@ -10,15 +10,23 @@ body {
 .bg-light {
   background-color: rgba(255, 255, 255, 0.6); }
 
+.no-border {
+  border: none !important; }
+.no-shadow {
+  box-shadow: none !important; }
+
+.menu-btn {
+  width: 33%;
+  padding: 1px 2px;
+  margin: 0px 1%;
+  padding: 2% 4%;
+  box-shadow: 0.5px 0.5px 2px black; }
+
 .menu {
   display: flex;
   position: relative;
   padding: 2px 3px;
   color: white; }
-  .menu__item {
-    width: 33%;
-    padding: 1px 2px;
-    margin: 0px 1%; }
   .menu #about-menu:after {
     content: '';
     display: block;
@@ -76,11 +84,9 @@ body {
     display: flex; }
 
 .banner {
-  background-image: url("../images/eightedge019_1.jpeg");
-  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  background-attachment: fixed;
   text-align: center;
   color: white;
   padding: 0 !important;
@@ -90,6 +96,9 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%); }
+  .banner-home {
+    height: 100vh;
+    background-image: url("../images/eightedge019_1.jpeg"); }
 
 .box {
   padding: 2% 4%;

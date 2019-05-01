@@ -43,11 +43,9 @@
 }
 
 .banner {
-    background-image: url("../images/eightedge019_1.jpeg");
-    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    background-attachment: fixed;
     text-align: center;
     color: white;
     padding: 0 !important;
@@ -58,6 +56,11 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+    }
+
+    &-home {
+        height: 100vh;
+        background-image: url("../images/eightedge019_1.jpeg");
     }
 }
 

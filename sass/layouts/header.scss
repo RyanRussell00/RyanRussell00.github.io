@@ -7,12 +7,6 @@ $page-colors: ('about-menu': $about-main-color, 'work-menu': $work-main-color,
     padding: 2px 3px;
     color: white;
 
-    &__item {
-        width: 33%;
-        padding: 1px 2px;
-        margin: 0px 1%;
-    }
-
     @each $page,
     $color in $page-colors {
         ##{$page} {
