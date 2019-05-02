@@ -1,7 +1,23 @@
+@import "../utils/mixins.scss";
+
 .container {
     width: 100%;
-    padding: 0.5%;
+    padding: 0.5% 0;
     display: inline-block;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.inner {
+    max-width: 100%;
+    padding: 0.5%;
+
+    &-flex {
+        display: flex;
+    }
 
     &-2 {
         width: 50%;
@@ -18,34 +34,18 @@
     &-left {
         float: left;
         max-width: 50%;
-        margin: 3px;
     }
 
     &-right {
         float: right;
         max-width: 50%;
-        margin: 3px;
     }
-
-    img {
-        width: 100%;
-        height: auto;
-    }
-}
-
-.inner-container {
-    width: inherit;
-    padding: 0.5%;
-
-    &-flex {
-        display: flex;
+    &-text {
+        padding: 0 3%;
     }
 }
 
 .banner {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
     text-align: center;
     color: white;
     padding: 0 !important;
@@ -59,8 +59,10 @@
     }
 
     &-home {
+        @include darken-img-bg("../images/eightedge019_1.jpeg");
         height: 100vh;
-        background-image: url("../images/eightedge019_1.jpeg");
+        font-size: 1.1em;
+        letter-spacing: 1.4px;
     }
 }
 

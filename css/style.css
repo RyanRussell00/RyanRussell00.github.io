@@ -5,28 +5,42 @@ body {
 .center {
   text-align: center; }
 
+.left {
+  text-align: left; }
+
 .bg-dark {
   background-color: rgba(0, 0, 0, 0.6); }
 .bg-light {
   background-color: rgba(255, 255, 255, 0.6); }
+.bg-image {
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-attachment: fixed !important; }
 
 .no-border {
   border: none !important; }
 .no-shadow {
   box-shadow: none !important; }
 
+.title {
+  text-align: center; }
+
+.white {
+  color: white; }
+
+.black {
+  color: black; }
+
 .menu-btn {
-  width: 33%;
-  padding: 1px 2px;
+  width: 25%;
   margin: 0px 1%;
   padding: 2% 4%;
   box-shadow: 0.5px 0.5px 2px black; }
 
 .menu {
   display: flex;
-  position: relative;
   padding: 2px 3px;
-  color: white; }
+  width: 100%; }
   .menu #about-menu:after {
     content: '';
     display: block;
@@ -43,6 +57,14 @@ body {
     border-bottom: solid 3px green; }
   .menu #work-menu:hover:after {
     width: 100%; }
+  .menu #portfolio-menu:after {
+    content: '';
+    display: block;
+    transition: 0.6s ease;
+    width: 0;
+    border-bottom: solid 3px orange; }
+  .menu #portfolio-menu:hover:after {
+    width: 100%; }
   .menu #contact-menu:after {
     content: '';
     display: block;
@@ -57,36 +79,33 @@ body {
 
 .container {
   width: 100%;
-  padding: 0.5%;
+  padding: 0.5% 0;
   display: inline-block; }
-  .container-2 {
-    width: 50%; }
-  .container-3 {
-    width: 33%; }
-  .container-4 {
-    width: 25%; }
-  .container-left {
-    float: left;
-    max-width: 50%;
-    margin: 3px; }
-  .container-right {
-    float: right;
-    max-width: 50%;
-    margin: 3px; }
   .container img {
     width: 100%;
     height: auto; }
 
-.inner-container {
-  width: inherit;
+.inner {
+  max-width: 100%;
   padding: 0.5%; }
-  .inner-container-flex {
+  .inner-flex {
     display: flex; }
+  .inner-2 {
+    width: 50%; }
+  .inner-3 {
+    width: 33%; }
+  .inner-4 {
+    width: 25%; }
+  .inner-left {
+    float: left;
+    max-width: 50%; }
+  .inner-right {
+    float: right;
+    max-width: 50%; }
+  .inner-text {
+    padding: 0 3%; }
 
 .banner {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   text-align: center;
   color: white;
   padding: 0 !important;
@@ -97,8 +116,10 @@ body {
     top: 50%;
     transform: translate(-50%, -50%); }
   .banner-home {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/eightedge019_1.jpeg");
     height: 100vh;
-    background-image: url("../images/eightedge019_1.jpeg"); }
+    font-size: 1.1em;
+    letter-spacing: 1.4px; }
 
 .box {
   padding: 2% 4%;

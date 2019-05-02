@@ -4,8 +4,8 @@
 @import "layouts/header";
 @import "layouts/footer";
 @import "layouts/containers";
+@import "pages/portfolio";
+@import "pages/education";
+@import "pages/experience";
 @import "pages/home";
-@import "pages/work";
-@import "pages/about";
-@import "pages/contact";
-
+@import "utils/mixins"

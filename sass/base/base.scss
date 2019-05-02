@@ -7,6 +7,10 @@ body {
     text-align: center;
 }
 
+.left {
+    text-align: left;
+}
+
 .bg {
     &-dark {
         background-color: $bg-dark;
@@ -15,13 +19,32 @@ body {
     &-light {
         background-color: $bg-light;
     }
+
+    &-image {
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-attachment: fixed !important;
+    }
 }
 
 .no {
     &-border {
         border: none !important;
     }
+
     &-shadow {
         box-shadow: none !important;
     }
+}
+
+.title {
+    text-align: center;
+}
+
+.white {
+    color: white;
+}
+
+.black {
+    color: black;
 }
