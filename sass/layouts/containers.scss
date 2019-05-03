@@ -57,13 +57,6 @@
         top: 50%;
         transform: translate(-50%, -50%);
     }
-
-    &-home {
-        @include darken-img-bg("../images/eightedge019_1.jpeg");
-        height: 100vh;
-        font-size: 1.1em;
-        letter-spacing: 1.4px;
-    }
 }
 
 .box {

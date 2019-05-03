@@ -1,0 +1,39 @@
+$page-colors: ('experience-menu': $experience-main-color, 
+'education-menu': $education-main-color,
+'portfolio-menu':$portfolio-main-color);
+
+.menu {
+    display: flex;
+    padding: 2px 3px;
+    width: 100%;
+
+    @each $page,
+    $color in $page-colors {
+        ##{$page} {
+            &:after {
+                content: '';
+                display: block;
+                transition: 0.6s ease;
+                width: 0;
+                border-bottom: solid 3px $color;
+            }
+
+            &:hover:after {
+                width: 100%;
+            }
+        }
+
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+.banner {
+    @include darken-img-bg("../images/eightedge019_1.jpeg");
+    height: 100vh;
+    font-size: 1.1em;
+    letter-spacing: 1.4px;
+}
