@@ -1,5 +1,5 @@
 footer {
-    border-top: 1px solid black;
+    border-top: 1px solid $accent-color;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -7,18 +7,5 @@ footer {
     padding-top: 1%;
     padding-bottom: 2%;
     color: black;
-
-    a {
-        margin: 0px 1%;
-        padding: 0.5% 1%;
-        box-shadow: 0px 0px 2px black;
-        text-decoration: none;
-        color: inherit;
-
-        &:hover {
-            transition: 0.2s ease;
-            background-color: white;
-            box-shadow: 1px 1px 2px black;
-        }
-    }
+    background-color: white;
 }

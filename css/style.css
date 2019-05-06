@@ -2,6 +2,13 @@ body {
   background-color: #ecf0f1;
   margin: 0; }
 
+ul {
+  list-style: square;
+  line-height: 1.3em; }
+
+hr {
+  color: #7372dd; }
+
 .center {
   text-align: center; }
 
@@ -36,6 +43,35 @@ body {
   margin: 0px 1%;
   padding: 2% 4%;
   box-shadow: 0.5px 0.5px 2px black; }
+  .menu-btn:after {
+    content: '';
+    display: block;
+    transition: 0.6s ease;
+    width: 0;
+    border-bottom: solid 3px #7372dd; }
+  .menu-btn:hover:after {
+    width: 100%; }
+
+.btn {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1em;
+  letter-spacing: 1.2px;
+  width: 100%;
+  background-color: #7372dd; }
+  .btn:hover {
+    transition: 0.2s ease;
+    color: black;
+    background-color: white;
+    box-shadow: 1px 1px 2px black; }
+  .btn-nav {
+    margin: 0px 1%;
+    padding: 4% 8%;
+    box-shadow: 0px 0px 2px black; }
+  .btn-footer {
+    margin: 0px 1%;
+    padding: 0.5% 1%;
+    box-shadow: 0px 0px 2px black; }
 
 .nav {
   width: 100%;
@@ -44,53 +80,37 @@ body {
   position: relative;
   height: auto;
   text-align: center;
-  border-bottom: 1px solid black;
-  box-shadow: 1px 0px 2px black; }
+  background-color: white;
+  border-bottom: 1px solid #7372dd;
+  box-shadow: 1px 0px 1px rgba(0, 0, 0, 0.5); }
   .nav-menu {
     text-align: center;
-    width: 30%;
+    width: 50%;
     height: inherit;
     margin: 1%;
     display: inline-flex; }
+  .nav-title {
+    float: left;
+    width: auto;
+    padding: 1%;
+    word-break: keep-all; }
   .nav-item {
-    width: 100%; }
-    .nav-item a {
-      text-decoration: none;
-      color: black;
-      font-size: 1.1em;
-      letter-spacing: 1.2px;
-      width: 100%;
-      margin: 0px 1%;
-      padding: 4% 8%;
-      box-shadow: 0px 0px 2px black; }
-      .nav-item a:hover {
-        transition: 0.2s ease;
-        background-color: white;
-        box-shadow: 1px 1px 2px black; }
+    width: 100%;
+    margin: 0 1%; }
 
 footer {
-  border-top: 1px solid black;
+  border-top: 1px solid #7372dd;
   bottom: 0;
   left: 0;
   width: 100%;
   text-align: center;
   padding-top: 1%;
   padding-bottom: 2%;
-  color: black; }
-  footer a {
-    margin: 0px 1%;
-    padding: 0.5% 1%;
-    box-shadow: 0px 0px 2px black;
-    text-decoration: none;
-    color: inherit; }
-    footer a:hover {
-      transition: 0.2s ease;
-      background-color: white;
-      box-shadow: 1px 1px 2px black; }
+  color: black;
+  background-color: white; }
 
 .container {
   width: 100%;
-  padding: 0.5% 0;
   display: block; }
   .container img {
     width: 100%;
@@ -101,6 +121,8 @@ footer {
   padding: 0.5%; }
   .inner-flex {
     display: flex; }
+  .inner-flex:nth-child(2) {
+    background-color: white; }
   .inner-2 {
     width: 50%; }
   .inner-3 {
@@ -115,6 +137,8 @@ footer {
     max-width: 50%; }
   .inner-text {
     padding: 0 3%; }
+    .inner-text > div {
+      text-align: center; }
   .inner-solo {
     width: 50%;
     margin: 0 auto; }
@@ -142,33 +166,10 @@ footer {
   display: flex;
   padding: 2px 3px;
   width: 100%; }
-  .menu #experience-menu:after {
-    content: '';
-    display: block;
-    transition: 0.6s ease;
-    width: 0;
-    border-bottom: solid 3px red; }
-  .menu #experience-menu:hover:after {
-    width: 100%; }
-  .menu #education-menu:after {
-    content: '';
-    display: block;
-    transition: 0.6s ease;
-    width: 0;
-    border-bottom: solid 3px yellow; }
-  .menu #education-menu:hover:after {
-    width: 100%; }
-  .menu #portfolio-menu:after {
-    content: '';
-    display: block;
-    transition: 0.6s ease;
-    width: 0;
-    border-bottom: solid 3px orange; }
-  .menu #portfolio-menu:hover:after {
-    width: 100%; }
-  .menu a {
-    text-decoration: none;
-    color: inherit; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
 
 .banner {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/eightedge019_1.jpeg");

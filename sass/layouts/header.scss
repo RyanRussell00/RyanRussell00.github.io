@@ -5,36 +5,27 @@
     position: relative;
     height: auto;
     text-align: center;
-    // background-color: whitesmoke;
-    border-bottom: 1px solid black;
-    box-shadow: 1px 0px 2px black;
+    background-color: white;
+    border-bottom: 1px solid $accent-color;
+    box-shadow: 1px 0px 1px rgba(0, 0, 0, 0.5);
 
     &-menu {
         text-align: center;
-        width: 30%;
+        width: 50%;
         height: inherit;
         margin: 1%;
         display: inline-flex;
     }
 
+    &-title {
+        float: left;
+        width: auto;
+        padding: 1%;
+        word-break: keep-all;
+    }
+
     &-item {
         width: 100%;
-
-        a {
-            text-decoration: none;
-            color: black;
-            font-size: 1.1em;
-            letter-spacing: 1.2px;
-            width: 100%;
-            margin: 0px 1%;
-            padding: 4% 8%;
-            box-shadow: 0px 0px 2px black;
-
-            &:hover {
-                transition: 0.2s ease;
-                background-color: white;
-                box-shadow: 1px 1px 2px black;
-            }
-        }
+        margin: 0 1%;
     }
 }

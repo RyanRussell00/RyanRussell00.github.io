@@ -3,6 +3,15 @@ body {
     margin: 0;
 }
 
+ul {
+    list-style: square;
+    line-height: 1.3em;
+}
+
+hr {
+    color: $accent-color;
+}
+
 .center {
     text-align: center;
 }
