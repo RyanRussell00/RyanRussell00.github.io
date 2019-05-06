@@ -7,7 +7,7 @@ ul {
   line-height: 1.3em; }
 
 hr {
-  color: #7372dd; }
+  color: #1e88e5; }
 
 .center {
   text-align: center; }
@@ -48,22 +48,22 @@ hr {
     display: block;
     transition: 0.6s ease;
     width: 0;
-    border-bottom: solid 3px #7372dd; }
+    border-bottom: solid 3px #1e88e5; }
   .menu-btn:hover:after {
     width: 100%; }
 
 .btn {
   text-decoration: none;
-  color: white;
+  color: #1e88e5;
   font-size: 1.1em;
   letter-spacing: 1.2px;
   width: 100%;
-  background-color: #7372dd; }
+  background-color: transparent; }
   .btn:hover {
     transition: 0.2s ease;
-    color: black;
+    color: #1e88e5;
     background-color: white;
-    box-shadow: 1px 1px 2px black; }
+    box-shadow: 1px 1px 2px #1e88e5; }
   .btn-nav {
     margin: 0px 1%;
     padding: 4% 8%;
@@ -80,8 +80,8 @@ hr {
   position: relative;
   height: auto;
   text-align: center;
-  background-color: white;
-  border-bottom: 1px solid #7372dd;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-bottom: 1px solid #1e88e5;
   box-shadow: 1px 0px 1px rgba(0, 0, 0, 0.5); }
   .nav-menu {
     text-align: center;
@@ -91,15 +91,18 @@ hr {
     display: inline-flex; }
   .nav-title {
     float: left;
-    width: auto;
-    padding: 1%;
-    word-break: keep-all; }
+    padding: 0.5% 1%; }
+    .nav-title h1 {
+      color: #1e88e5;
+      text-decoration: none;
+      padding: 0 !important;
+      margin: 0 !important; }
   .nav-item {
     width: 100%;
     margin: 0 1%; }
 
 footer {
-  border-top: 1px solid #7372dd;
+  border-top: 1px solid #1e88e5;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -107,7 +110,7 @@ footer {
   padding-top: 1%;
   padding-bottom: 2%;
   color: black;
-  background-color: white; }
+  background-color: rgba(255, 255, 255, 0.6); }
 
 .container {
   width: 100%;
@@ -121,8 +124,8 @@ footer {
   padding: 0.5%; }
   .inner-flex {
     display: flex; }
-  .inner-flex:nth-child(2) {
-    background-color: white; }
+  .inner-flex:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.6); }
   .inner-2 {
     width: 50%; }
   .inner-3 {
@@ -161,6 +164,11 @@ footer {
   box-shadow: 0.5px 0.5px 2px black; }
   .box-light {
     box-shadow: 0.5px 0.5px 2px white; }
+
+.page-title {
+  display: flex; }
+  .page-title h1 {
+    border-bottom: 1px solid #1e88e5; }
 
 .menu {
   display: flex;

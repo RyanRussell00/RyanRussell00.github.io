@@ -18,8 +18,8 @@
         display: flex;
     }
 
-    &-flex:nth-child(2) {
-        background-color: white;
+    &-flex:nth-child(even) {
+        background-color: $bg-light;
     }
 
     &-2 {
@@ -82,5 +82,12 @@
 
     &-light {
         box-shadow: 0.5px 0.5px 2px white;
+    }
+}
+
+.page-title {
+    display: flex;
+    h1 {
+        border-bottom: 1px solid $accent-color;
     }
 }

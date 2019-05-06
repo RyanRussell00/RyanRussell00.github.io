@@ -5,7 +5,7 @@
     position: relative;
     height: auto;
     text-align: center;
-    background-color: white;
+    background-color: $bg-light;
     border-bottom: 1px solid $accent-color;
     box-shadow: 1px 0px 1px rgba(0, 0, 0, 0.5);
 
@@ -19,9 +19,14 @@
 
     &-title {
         float: left;
-        width: auto;
-        padding: 1%;
-        word-break: keep-all;
+        padding: 0.5% 1%;
+
+        h1 {
+            color: $accent-color;
+            text-decoration: none;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
     }
 
     &-item {
