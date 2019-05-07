@@ -18,7 +18,7 @@
         display: flex;
     }
 
-    &-flex:nth-child(even) {
+    &-flex:nth-child(2) {
         background-color: $bg-light;
     }
 
@@ -36,18 +36,18 @@
 
     &-left {
         float: left;
-        max-width: 50%;
+        width: 50%;
     }
 
     &-right {
         float: right;
-        max-width: 50%;
+        width: 50%;
     }
 
     &-text {
-        padding: 0 3%;
+        padding: 1% 3%;
 
-        & > div {
+        &>div {
             text-align: center;
         }
     }
@@ -87,6 +87,8 @@
 
 .page-title {
     display: flex;
+    padding-left: 3%;
+
     h1 {
         border-bottom: 1px solid $accent-color;
     }

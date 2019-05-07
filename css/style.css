@@ -38,6 +38,13 @@ hr {
 .black {
   color: black; }
 
+.w-50 {
+  width: 50%; }
+
+p > a {
+  text-decoration: underline;
+  color: blue; }
+
 .menu-btn {
   width: 25%;
   margin: 0px 1%;
@@ -124,7 +131,7 @@ footer {
   padding: 0.5%; }
   .inner-flex {
     display: flex; }
-  .inner-flex:nth-child(even) {
+  .inner-flex:nth-child(2) {
     background-color: rgba(255, 255, 255, 0.6); }
   .inner-2 {
     width: 50%; }
@@ -134,12 +141,12 @@ footer {
     width: 25%; }
   .inner-left {
     float: left;
-    max-width: 50%; }
+    width: 50%; }
   .inner-right {
     float: right;
-    max-width: 50%; }
+    width: 50%; }
   .inner-text {
-    padding: 0 3%; }
+    padding: 1% 3%; }
     .inner-text > div {
       text-align: center; }
   .inner-solo {
@@ -166,7 +173,8 @@ footer {
     box-shadow: 0.5px 0.5px 2px white; }
 
 .page-title {
-  display: flex; }
+  display: flex;
+  padding-left: 3%; }
   .page-title h1 {
     border-bottom: 1px solid #1e88e5; }
 
