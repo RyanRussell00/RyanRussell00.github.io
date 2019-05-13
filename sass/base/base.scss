@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: $bg-color;
     margin: 0;
@@ -62,7 +66,12 @@ hr {
 .w-50 {
     width: 50%;
 }
-p > a {
+
+p>a {
     text-decoration: underline;
     color: blue;
+}
+
+.flex {
+    display: flex;
 }

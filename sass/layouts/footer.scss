@@ -8,4 +8,23 @@ footer {
     padding-bottom: 2%;
     color: black;
     background-color: $bg-light;
+
+    h3 {
+        text-align: center;
+        width: 100%;
+    }
+
+    >div {
+        display: inline-flex;
+        text-align: center;
+        @media screen and (max-width: $break-tablet) {
+            display: block;
+            text-align: center;
+            width: 100%;
+        }
+
+        >div {
+            margin: 5%;
+        }
+    }
 }

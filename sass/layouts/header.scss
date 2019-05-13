@@ -3,24 +3,20 @@
     left: 0;
     top: 0;
     position: relative;
-    height: auto;
+    height: fit-content;
     text-align: center;
     background-color: $bg-light;
     border-bottom: 1px solid $accent-color;
     box-shadow: 1px 0px 1px rgba(0, 0, 0, 0.5);
 
-    &-menu {
-        text-align: center;
-        width: 50%;
-        height: inherit;
-        margin: 1%;
-        display: inline-flex;
-    }
-
-
     &-title {
         float: left;
+        top: 0;
         padding: 0.5% 1%;
+
+        @media screen and (max-width: $break-tablet) {
+            float: none;
+        }
 
         h1 {
             color: $accent-color;
@@ -30,8 +26,26 @@
         }
     }
 
+    &-menu {
+        text-align: center;
+        width: 50%;
+        height: inherit;
+        margin: 1%;
+        display: inline-flex;
+
+        @media screen and (max-width: $break-mobile) {
+            display: flex;
+            max-width: 100%;
+            margin: 1% 2%;
+        }
+    }
+
     &-item {
         width: 100%;
         margin: 0 1%;
+
+        @media screen and (max-width: $break-tablet) {
+            margin: 0 3%;
+        }
     }
 }
