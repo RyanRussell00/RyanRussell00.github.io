@@ -1,0 +1,36 @@
+footer {
+  border-top: 1px solid #1e88e5;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 2%;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+footer h3 {
+  text-align: center;
+  width: 100%;
+}
+
+footer > div {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  footer > div {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+footer > div > div {
+  margin: 5%;
+}
+/*# sourceMappingURL=footer.css.map */
