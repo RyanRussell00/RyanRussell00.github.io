@@ -1,41 +1,641 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="css\style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ryan Russell | More Than A Software Engineer</title>
+	<title>Ryan Russell</title>
+	<!-- for-mobile-apps -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords"
+		content="Ryan Russell, a software engineer, entrepreneur, and innovator looking to make a brighter tomorrow through technology." />
+
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+
+	<!-- css files -->
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' /><!-- bootstrap css -->
+	<link href="css/style.css" rel='stylesheet' type='text/css' /><!-- custom css -->
+	<script src="https://kit.fontawesome.com/15c0c68322.js" crossorigin="anonymous"></script><!-- fontawesome css -->
+	<!-- //css files -->
+
+	<!-- google fonts -->
+	<link
+		href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+		rel="stylesheet">
+	<!-- //google fonts -->
+
 </head>
 
 <body>
 
-    <div class="container banner bg-image">
-        <div class="text-over-image box white">
-            <h1>
-                Ryan Russell
-            </h1>
-            <h3>
-                More Than A Software Engineer
-            </h3>
-            <hr>
-            <div class="menu">
-                <div class="menu-btn">
-                    <a href="pages\experience.html">
-                        Experience
-                    </a>
-                </div>
-                <div class="menu-btn" id="middle">
-                    <a href="pages\education.html">
-                        Education
-                    </a>
-                </div>
-                <div class="menu-btn">
-                    <a href="pages\portfolio.html">
-                        Portfolio
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
+	<!-- header -->
+	<header>
+		<nav class="navbar">
+			<div class="container">
+				<h1 class="wthree-logo">
+					<a href="index.html" id="logoLink"><i class="fas fa-code"></i> <span>R</span>yan
+						<span>R</span>ussell</a>
+				</h1>
+
+				<!-- menu -->
+				<ul id="menu">
+					<li>
+						<input id="check02" type="checkbox" name="menu" />
+						<label for="check02"><span class="fa fa-bars" aria-hidden="true"></span></label>
+						<ul class="submenu">
+							<li><a href="index.html" class="active">Home</a></li>
+							<li><a href="#about">Who am I?</a></li>
+							<li><a href="#experience">Experience</a></li>
+							<li><a href="#education">Education</a></li>
+							<li><a href="#portfolio">Portfolio</a></li>
+							<li><a href="#testimonials">Testimonials</a></li>
+							<li><a href="#contact">Let's get in touch!</a></li>
+						</ul>
+					</li>
+				</ul>
+				<!-- //menu -->
+			</div>
+		</nav>
+	</header>
+	<!-- //header -->
+
+	<!-- banner -->
+	<div id="home" class="banner-w3pvt d-flex">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7 bnr-txt-w3pvt">
+					<div class="bnr-w3pvt-txt mt-sm-5">
+						<h6>Isn't this prettier than a resume?</h6>
+						<h2>Hey, <span>I'm Ryan Russell</span></h2>
+						<h4>Software Engineer - Entrepreneur - Human</h4>
+						<p class="mt-4">Life's short. Lets do something positive together.</p>
+						<ul class="social_section_1info mt-4">
+							<li class="mb-2 facebook"><a href="#"><span class="fa fa-facebook"></span></a></li>
+							<li class="mb-2 twitter"><a href="#"><span class="fa fa-twitter"></span></a></li>
+							<li class="linkedin"><a href="#"><span class="fa fa-linkedin"></span></a></li>
+							<li class="pinterest"><a href="#"><span class="fa fa-pinterest"></span></a></li>
+						</ul>
+						<a href="#about" class="scroll bnr-btn mr-2">Convince Me</a>
+						<a href="#contact" class="scroll bnr-btn1">I'm Sold!</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //banner -->
+
+	<!-- about -->
+	<section class="about" id="about">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-5 p-0">
+					<img src="images/about1.jpg" alt="" class="img-fluid" />
+				</div>
+				<div class="col-lg-6">
+					<div class="about-right">
+						<h4 class="main">Here's a little about me</h4>
+						<p>Occaecat Lorem mollit anim sunt irure aute magna reprehenderit ad dolore minim esse.</p>
+						<div class="row mt-sm-5 mt-4 about-right-inner">
+							<div class="col-sm-4 col-6 myphoto-sign text-center">
+								<img src="images/myphoto.jpg" alt="" class="img-fluid rounded-circle" />
+								<a href="#contact" class="scroll abt-btn">Get In Touch </a>
+							</div>
+							<div class="col-sm-7 offset-lg-1">
+								<h4>Personal Info</h4>
+								<p>Hello, My name is <strong>Ryan Russell</strong>. I've been working as a Web Developer
+									since 2018 and a Software Engineer since 2020. But my history starts way before
+									then.</p>
+								<h4 class="mt-4">Skills & Abilities</h4>
+								<div class="progress-one my-lg-3">
+									<h4 class="progress-tittle">Object-Oriented Programming</h4>
+									<div class="progress">
+										<div class="progress-bar bg-danger" role="progressbar" style="width: 85%"
+											aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</div>
+								<div class="progress-one">
+									<h4 class="progress-tittle">Mobile Development</h4>
+									<div class="progress">
+										<div class="progress-bar bg-info" role="progressbar" style="width: 65%"
+											aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</div>
+								<div class="progress-one mt-3">
+									<h4 class="progress-tittle">Front-End Web Development</h4>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 75%"
+											aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h3 class="position">About Me</h3>
+			</div>
+		</div>
+	</section>
+	<!-- //about -->
+
+	<!-- skills -->
+	<section class="services py-5" id="skills">
+		<div class="container py-3">
+			<div class=" mb-sm-5 mb-4">
+				<h3 class="heading">Skills & Abilities</h3>
+				<p>On a scale from <strong>'I've heard of it'</strong> to <strong>'I do it in my sleep'</strong></p>
+			</div>
+			<div class="middile-inner-con">
+				<div class="progress-one mt-3">
+					<div class="progress-tittle pb-1">
+						<h4>Java</h4>
+						<h6>Java Spring Boot, JaCoCo</h6>
+					</div>
+					<div class="progress">
+						<div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="90"
+							aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+				<div class="progress-one mt-3">
+					<h4 class="progress-tittle">C++</h4>
+					<div class="progress">
+						<div class="progress-bar bg-dark" role="progressbar" style="width: 75%" aria-valuenow="75"
+							aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+				<div class="progress-one mt-3">
+					<div class="progress-tittle pb-1">
+						<h4>Databases</h4>
+						<h6>NoSQL, MySQL, Firebase, AWS RDS, AWS DynamoDB</h6>
+					</div>
+					<div class="progress">
+						<div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="80"
+							aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+				<div class="progress-one mt-3">
+					<div class="progress-tittle pb-1">
+						<h4>Mobile Development</h4>
+						<h6>Dart, Flutter, Android Studio</h6>
+					</div>
+					<div class="progress">
+						<div class="progress-bar bg-success" role="progressbar" style="width: 88%" aria-valuenow="88"
+							aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+				<div class="progress-one mt-3">
+					<h4 class="progress-tittle">Python</h4>
+					<div class="progress">
+						<div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="70"
+							aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- //skills -->
+
+	<!-- experience -->
+	<section class="experience py-5" id="experience">
+		<div class="container py-3">
+			<div class="mb-sm-5 mb-4">
+				<h3 class="heading">Experience</h3>
+				<p>Click on The Different Tabs Below to Learn More</p>
+			</div>
+			<div class="middile-inner-con">
+				<div class="tab-main mx-auto">
+
+					<input id="ex-tab1" type="radio" name="ex-tabs" checked>
+					<label for="ex-tab1"><img src="images/s1.png" alt="" class="img-fluid"/>Liberty Mutual Insurance</label>
+
+					<input id="ex-tab2" type="radio" name="ex-tabs">
+					<label for="ex-tab2"><img src="images/s2.png" alt="" class="img-fluid" />OpenClassrooms</label>
+
+					<input id="ex-tab3" type="radio" name="ex-tabs">
+					<label for="ex-tab3"><img src="images/s4.png" alt="" class="img-fluid" />RSquare Software LLC</label>
+
+					<section id="ex-content1">
+						<div class="menu-grids">
+							<div class="t-in">
+								<div class="text-info-sec">
+									<div class="service-in text-left">
+										<div class="card">
+											<div class="card-body p-0">
+												<img src="images/s1.png" alt="" class="img-fluid" />
+												<img src="images/s2.png" alt="" class="img-fluid" />
+												<img src="images/s3.png" alt="" class="img-fluid" />
+												<h3 class="mb-md-4">Liberty Mutual Insurance</h3>
+												<h5 class="my-3 card-title" data-aos="fade-left">Software Engineering Internship (June 2020 - Sept 2020)</h5>
+												<p class="card-text" data-aos="fade-left">Lorem ipsum dolor sit amet
+													consectetur adipisicing elit sedc dnmo eiusmod tempor
+													incididunt ut labore. Mauris elementum tortor a nisl aliquet
+													fringilla. Donec et risus augue. Proin
+													sit amet maximus dui. Vivamus lacinia nisi tempor ligula sagittis
+													vehicula.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section id="ex-content2">
+						<div class="menu-grids">
+							<div class="t-in">
+								<div class="text-info-sec">
+									<div class="service-in text-left">
+										<div class="card">
+											<div class="card-body p-0">
+												<img src="images/s2.png" alt="" class="img-fluid" />
+												<img src="images/s3.png" alt="" class="img-fluid" />
+												<img src="images/s4.png" alt="" class="img-fluid" />
+												<h3 class="mb-md-4">OpenClassrooms</h3>
+												<h5 class="my-3 card-title">Web Developer Mentor & Project Test Lead (2019 - Present)</h5>
+												<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+													elit sedc dnmo eiusmod tempor
+													incididunt ut labore. Mauris elementum tortor a nisl aliquet
+													fringilla. Donec et risus augue. Proin
+													sit amet maximus dui. Vivamus lacinia nisi tempor ligula sagittis
+													vehicula.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section id="ex-content3">
+						<div class="menu-grids">
+							<div class="t-in">
+								<div class="text-info-sec">
+									<div class="service-in text-left">
+										<div class="card">
+											<div class="card-body p-0">
+												<img src="images/s4.png" alt="" class="img-fluid" />
+												<img src="images/s5.png" alt="" class="img-fluid" />
+												<img src="images/s6.png" alt="" class="img-fluid" />
+												<h3 class="mb-md-4">RSquare Software LLC</h3>
+												<h5 class="my-3 card-title">Front-End Developer (2018 - 2019)</h5>
+												<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+													elit sedc dnmo eiusmod tempor
+													incididunt ut labore. Mauris elementum tortor a nisl aliquet
+													fringilla. Donec et risus augue. Proin
+													sit amet maximus dui. Vivamus lacinia nisi tempor ligula sagittis
+													vehicula.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- //experience -->
+
+	<!-- education-->
+	<section class="experience pt-5" id="education">
+		<div class="container py-lg-5">
+			<div class="mb-sm-5 mb-4">
+				<h3 class="heading">Education</h3>
+				<p>Click on The Different Tabs Below to Learn More</p>
+			</div>
+			<div class="middile-inner-con">
+				<div class="tab-main mx-auto">
+
+					<input id="ed-tab1" type="radio" name="ed-tabs" checked>
+					<label for="ed-tab1"><i class="fa fa-university" aria-hidden="true"></i>University Of Washington, Bothell</label>
+
+					<input id="ed-tab2" type="radio" name="ed-tabs">
+					<label for="ed-tab2"><img src="images/s2.png" alt="" class="img-fluid" /> Edmonds Community College</label>
+
+					<!-- <input id="ed-tab3" type="radio" name="ed-tabs">
+					<label for="ed-tab3"><img src="images/s4.png" alt="" class="img-fluid" /> Company Name 3</label> -->
+
+					<section id="ed-content1">
+						<div class="menu-grids">
+							<div class="t-in">
+								<div class="text-info-sec">
+									<div class="service-in text-left">
+										<div class="card">
+											<div class="card-body p-0">
+												<img src="images/s1.png" alt="" class="img-fluid" />
+												<img src="images/s2.png" alt="" class="img-fluid" />
+												<img src="images/s3.png" alt="" class="img-fluid" />
+												<h3 class="mb-md-4">Company Name</h3>
+												<h5 class="my-3 card-title" data-aos="fade-left">Creative Director in
+													some X Company (2001 to 2002)</h5>
+												<p class="card-text" data-aos="fade-left">Lorem ipsum dolor sit amet
+													consectetur adipisicing elit sedc dnmo eiusmod tempor
+													incididunt ut labore. Mauris elementum tortor a nisl aliquet
+													fringilla. Donec et risus augue. Proin
+													sit amet maximus dui. Vivamus lacinia nisi tempor ligula sagittis
+													vehicula.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section id="ed-content2">
+						<div class="menu-grids">
+							<div class="t-in">
+								<div class="text-info-sec">
+									<div class="service-in text-left">
+										<div class="card">
+											<div class="card-body p-0">
+												<img src="images/s2.png" alt="" class="img-fluid" />
+												<img src="images/s3.png" alt="" class="img-fluid" />
+												<img src="images/s4.png" alt="" class="img-fluid" />
+												<h3 class="mb-md-4">Company Name</h3>
+												<h5 class="my-3 card-title">UI Developer in some y Company (2002 to
+													2006)</h5>
+												<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+													elit sedc dnmo eiusmod tempor
+													incididunt ut labore. Mauris elementum tortor a nisl aliquet
+													fringilla. Donec et risus augue. Proin
+													sit amet maximus dui. Vivamus lacinia nisi tempor ligula sagittis
+													vehicula.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<!-- <section id="ed-content3">
+						<div class="menu-grids">
+							<div class="t-in">
+								<div class="text-info-sec">
+									<div class="service-in text-left">
+										<div class="card">
+											<div class="card-body p-0">
+												<img src="images/s4.png" alt="" class="img-fluid" />
+												<img src="images/s5.png" alt="" class="img-fluid" />
+												<img src="images/s6.png" alt="" class="img-fluid" />
+												<h3 class="mb-md-4">Company Name</h3>
+												<h5 class="my-3 card-title">Mobile App Developer in some z Company (2006
+													to 2008)</h5>
+												<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+													elit sedc dnmo eiusmod tempor
+													incididunt ut labore. Mauris elementum tortor a nisl aliquet
+													fringilla. Donec et risus augue. Proin
+													sit amet maximus dui. Vivamus lacinia nisi tempor ligula sagittis
+													vehicula.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section> -->
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- //education -->
+
+	<!-- quote -->
+	<section class="quote py-5">
+		<div class="container py-lg-5">
+			<div class="row">
+				<div class="col-lg-8">
+					<h4>" I've worked with some X company for several years and that is the best company in the Market.
+						Mauris elementum tortor a nisl
+						aliquet fringilla. Donec et risus augue. Proin sit amet maximus dui Vivamus lacinia nisi tempor
+						ligula sagittis vehicula."</h4>
+					<h5>designer - developer - freelancer</h5>
+					<h6>-Ryan Russell</h6>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- //quote -->
+
+	<!-- portfolio -->
+	<section class="portfolio py-5" id="portfolio">
+		<div class="container py-lg-5">
+			<h3 class="heading mb-sm-5 mb-4">Portfolio</h3>
+			<div class="row">
+				<div class="col-lg-3 col-md-4 col-6 p-0">
+					<div class="box9">
+						<img src="images/portfolio1.jpg" alt="portfolio" class="img-fluid" />
+						<div class="box-content">
+							<h3 class="title">FastMath</h3>
+							<ul class="icon">
+								<li><a href="#"><i class="fa fa-link"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-6 p-0">
+					<div class="box9">
+						<img src="images/portfolio2.jpg" alt="portfolio" class="img-fluid" />
+						<div class="box-content">
+							<h3 class="title">HowMuch</h3>
+							<ul class="icon">
+								<li><a href="#"><i class="fa fa-link"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-6 p-0">
+					<div class="box9">
+						<img src="images/portfolio3.jpg" alt="portfolio" class="img-fluid" />
+						<div class="box-content">
+							<h3 class="title">RSquare Software LLC</h3>
+							<ul class="icon">
+								<li><a href="#"><i class="fa fa-link"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-6 p-0">
+					<div class="box9">
+						<img src="images/portfolio4.jpg" alt="portfolio" class="img-fluid" />
+						<div class="box-content">
+							<h3 class="title">SongBird</h3>
+							<ul class="icon">
+								<li><a href="#"><i class="fa fa-link"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-6 p-0">
+					<div class="box9">
+						<img src="images/portfolio4.jpg" alt="portfolio" class="img-fluid" />
+						<div class="box-content">
+							<h3 class="title">RiskyRocket</h3>
+							<ul class="icon">
+								<li><a href="#"><i class="fa fa-link"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- //portfolio -->
+
+	<!--testimonials-->
+	<section class="client py-5" id="testimonials">
+		<div class="container py-lg-5">
+			<h3 class="heading mb-sm-5 mb-4">Testimonials & Recommendations </h3>
+			<div class="row client-slider-slide">
+				<div class="col-lg-6 col-md-6 w3layouts-txt-says mb-md-0 mb-5">
+					<div class="clients-info-grid">
+						<p>"I've done my share of market research before hiring someone to help handle my business
+							needs. Ryan Russell provided top notch services at very competitive prices in a short
+							period of time. Easy to work with, and takes an innovative and competitive approach to
+							the work he provides. I highly recommend giving him a chance to help take care of your
+							business marketing needs."</p>
+						<div class="row">
+							<div class="col-lg-2 col-3 pr-0 img-position mt-3">
+								<img src="images\GWS-logo-full-1.png" alt="" class="img-fluid">
+							</div>
+							<a href="http://garibaldiscreens.com/" target="_blank">
+								<div class=" col-lg-12 clients-txt-info">
+									<h4 class="mt-4">Lyon M.</h4>
+									<p>Operations Manager, GWS</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 w3layouts-txt-says">
+					<div class="clients-info-grid">
+						<p>"Ryan did a great job with our website. Very professional, and supportive interactions with
+							him to date. Very clean.
+							Two clients I work with have requested my web developers information!"
+						</p>
+						<div class="row">
+							<div class="col-lg-2 col-3 pr-0 img-position mt-3">
+								<img src="images\dt_royal_pic.jpg" alt="" class="img-fluid">
+							</div>
+							<a href="https://dtroyalconstruction.com/" target="_blank">
+								<div class="col-lg-12 clients-txt-info">
+									<h4 class="mt-4">Damien A.</h4>
+									<p>Owner, DT Royal Construction</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row client-slider-slide mt-4">
+				<div class="col-lg-6 col-md-6 w3layouts-txt-says mx-auto">
+					<div class="clients-info-grid">
+						<p>"Throughout this time Ryan has been consistently successful in his computer science
+							endeavors. He is a bright and dedicated student who works well both individually and in
+							groups. In the classroom and in group environments Ryan is always a positive influence
+							on his peers. His work as my TA is exemplary; he is able to draw out students’ own
+							understanding of the subject matter without being heavy-handed or condescending. One
+							thing that really stands out for me about Ryan is his unwavering desire to truly
+							understand."
+						</p>
+						<div class="row">
+							<div class="col-lg-2 col-3 pr-0 img-position mt-3">
+								<img src="images/edcc.png" alt="" class="img-fluid">
+							</div>
+							<a href="https://dtroyalconstruction.com/" target="_blank">
+								<div class="col-lg-12 clients-txt-info">
+									<h4 class="mt-4">Professor Zuvich</h4>
+									<p>CS Faculty, Edmonds Community College</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--//testimonials-->
+
+	<!-- Contact -->
+	<section class="contact py-5" id="contact">
+		<div class="container py-lg-5">
+			<h3 class="heading mb-sm-5 mb-4">Let's Get In Touch!</h3>
+			<p>Let's do something amazing together. Whether it's working as a Software Engineer, helping design a
+				website, or even remodeling your kitchen!</p>
+			<br>
+			<div class="contact-form">
+				<div class="row">
+					<div class="col-lg-8">
+						<a href="mailto:RyanRuss@uw.edu">
+							<h6><strong>Email: </strong>RyanRuss@uw.edu</h6>
+						</a>
+						<h6><strong>Phone: </strong>Email me for my phone number ;)</h6>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- //Contact -->
+
+	<!-- footer -->
+	<footer class="py-lg-5 py-4">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2">
+					<h3 class="wthree-logo mt-3">
+						<a href="index.html" id="logoLink1"><i class="fas fa-code"></i> <span>R</span>yan
+							<span>R</span>ussell</a>
+					</h3>
+				</div>
+				<div class="col-lg-7 my-lg-0 my-4">
+					<p class="mt-2"><span class="fa mr-2 fa-envelope"></span><a
+							href="mailto:RyanRuss@uw.edu">RyanRuss@uw.edu</a>
+				</div>
+				<div class="col-lg-3 copy-right p-0 text-lg-right">
+
+					<p>Follow me on social media</p>
+					<ul class="social_section_1info">
+						<li class="mb-2 facebook"><a href="#"><span class="fa fa-facebook"></span></a></li>
+						<li class="mb-2 twitter"><a href="#"><span class="fa fa-twitter"></span></a></li>
+						<li class="linkedin"><a href="#"><span class="fa fa-linkedin"></span></a></li>
+						<li class="pinterest"><a href="#"><span class="fa fa-pinterest"></span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- //footer -->
+
+	<!-- copyright -->
+	<div class="copyright py-3 text-center">
+		<div class="container">
+			<p class="my-2">©
+				<script>document.write(new Date().getFullYear());</script>
+				Ryan Russell. All rights reserved
+			</p>
+		</div>
+		<p class="mini-text pt-3">Original Template by <a href="http://w3layouts.com"> W3layouts.</a> Redesign by Ryan
+			Russell.</p>
+	</div>
+	<!-- copyright -->
+
+	<!-- move top -->
+	<div class="move-top text-right">
+		<a href="#home" class="move-top">
+			<span class="fa fa-angle-up  mb-3" aria-hidden="true"></span>
+		</a>
+	</div>
+	<!-- move top -->
 
 </body>
 
