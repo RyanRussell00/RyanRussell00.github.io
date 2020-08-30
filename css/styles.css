@@ -70,6 +70,11 @@ body {
   background-color: whitesmoke;
 }
 
+/* Added styles by Ryan */
+.email {
+  letter-spacing: 0.12em;
+}
+
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
 }
@@ -10104,7 +10109,7 @@ p.lead {
   margin-right: 0;
 }
 .social-icons .social-icon:hover {
-  background-color: #bd5d38;
+  background-color: var(--secondary);
 }
 
 .dev-icons {
