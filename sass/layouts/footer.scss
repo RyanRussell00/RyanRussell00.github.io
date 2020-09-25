@@ -1,0 +1,32 @@
+@import '../utils/variables';
+
+footer {
+    border-top: 1px solid $accent-color;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    color: black;
+    background-color: $bg-light;
+
+    h3 {
+        text-align: center;
+        width: 100%;
+    }
+
+    >div {
+        display: inline-flex;
+        text-align: center;
+        @media screen and (max-width: $break-tablet) {
+            display: block;
+            text-align: center;
+            width: 100%;
+        }
+
+        >div {
+            margin: 5%;
+        }
+    }
+}

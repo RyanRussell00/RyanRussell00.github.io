@@ -1,0 +1,44 @@
+.btn {
+  text-decoration: none;
+  color: #1e88e5;
+  font-size: 1.1em;
+  letter-spacing: 1.2px;
+  width: 100%;
+  background-color: transparent;
+}
+
+.btn:hover {
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  color: #1e88e5;
+  background-color: white;
+  -webkit-box-shadow: 1px 1px 2px #1e88e5;
+          box-shadow: 1px 1px 2px #1e88e5;
+}
+
+.btn-nav {
+  margin: 0px 1%;
+  padding: 4% 8%;
+  -webkit-box-shadow: 0px 0px 2px black;
+          box-shadow: 0px 0px 2px black;
+}
+
+@media screen and (max-width: 1200px) {
+  .btn-nav {
+    padding: 2% 4%;
+  }
+}
+
+.btn-footer {
+  margin: 0px 1%;
+  padding: 2% 3%;
+  -webkit-box-shadow: 0px 0px 2px black;
+          box-shadow: 0px 0px 2px black;
+}
+
+@media screen and (max-width: 1200px) {
+  .btn-footer {
+    margin: 2%;
+  }
+}
+/*# sourceMappingURL=buttons.css.map */
