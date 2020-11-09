@@ -27,6 +27,12 @@
       <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2"
           src="assets/img/profile.jpg" alt="" /></span>
     </a>
+    <div class="social-icons">
+      <a class="social-icon transparent" href="https://www.linkedin.com/in/ryanrussell00/" target="_blank"><i
+          class="fab fa-linkedin-in"></i></a>
+      <a class="social-icon transparent" href="https://github.com/RyanRussell00" target="_blank"><i
+          class="fab fa-github"></i></a>
+    </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -349,15 +355,16 @@
     <section class="resume-section" id="projects">
       <div class="resume-section-content">
         <h2>Personal Projects</h2>
-        <h5 class="mb-4">
+        <p class="mb-4">
           Not all projects are listed here, for more details check out my
           <a class="underline" href="https://github.com/RyanRussell00" target="_blank"><u>GitHub</u></a>
-        </h5>
+        </p>
 
         <div class="card-columns">
           <div class="card">
             <a href="https://github.com/RyanRussell00/personal-dj" target="_blank">
-              <h4 class="card-title text-center p-2 text-danger">Most Popular: 1,600+ Users!</h4>
+              <h4 class="card-title text-center p-2 text-danger">Most Popular: 2,400+ Users!</h4>
+              <p class="card-title text-center p-2 text-secondary">Personal Project</p>
               <img class="card-img-top p-3" src="./assets/img/spotify.png" alt="Card image cap" />
               <div class="card-body">
                 <h5 class="card-title">Personal DJ Web App</h5>
@@ -374,6 +381,7 @@
           </div>
 
           <div class="card">
+            <p class="card-title text-center p-2 text-secondary">Hackathon Project</p>
             <img class="card-img-top p-3" src="./assets/img/rocket.png" alt="Card image cap" />
             <div class="card-body">
               <h5 class="card-title">Rocket Risk Calculator</h5>
@@ -390,7 +398,29 @@
           </div>
 
           <div class="card">
+            <a href="https://github.com/RyanRussell00/nutrl-news" target="_blank">
+              <p class="card-title text-center p-2 text-secondary">Hackathon Project</p>
+              <img class="card-img-top p-3" src="./assets/img/news_feed.png" alt="Card image cap" />
+              <div class="card-body">
+                <h5 class="card-title">Nutrl News</h5>
+                <p class="card-text">
+                  Chrome extension that automatically searches for related news posts in your Facebook feed to help keep
+                  it balanced!
+                  Using Google Cloud NLP service we extracted important information from post
+                  captions, searched for related articles using Google Custom Search, and stored them in DynamoDB, then
+                  built a Facebook post alongside the existing Facebook post.
+                </p>
+                <small>AWS, Google Cloud, Chrome Extension, Javascript</small>
+              </div>
+              <div class="card-footer text-muted">
+                <a href="https://github.com/RyanRussell00/nutrl-news" target="_blank">Click here to view the repo</a>
+              </div>
+            </a>
+          </div>
+
+          <div class="card">
             <a href="https://github.com/RyanRussell00/p68k" target="_blank">
+              <p class="card-title text-center p-2 text-secondary">Class Project</p>
               <img class="card-img-top p-3" src="./assets/img/assembly.png" alt="Card image cap" />
               <div class="card-body">
                 <h5 class="card-title">Motorola 68000 Disassembler</h5>
@@ -410,6 +440,7 @@
 
           <div class="card">
             <a href="https://github.com/RyanRussell00/Complete-Bus-System" target="_blank">
+              <p class="card-title text-center p-2 text-secondary">Class Project</p>
               <img class="card-img-top p-3" src="./assets/img/bus.png" alt="Card image cap" />
               <div class="card-body">
                 <h5 class="card-title">Complete Bus System</h5>
@@ -428,12 +459,13 @@
 
           <div class="card">
             <a href="https://play.google.com/store/apps/details?id=app.fastmath" target="_blank">
+              <p class="card-title text-center p-2 text-secondary">Class Project</p>
               <img class="card-img-top p-3" src="./assets/img/math.png" alt="Card image cap" />
               <div class="card-body">
                 <h5 class="card-title">Fast Math</h5>
                 <p class="card-text">
-                  An open-source web app where you can fine-tune your music preferences and create a playlist directly
-                  to Spotify
+                  Using gamification, we designed a math game where users would solve math questions and compete for
+                  global high scores.
                 </p>
                 <small>Java, Android, Google FireStore</small>
               </div>
@@ -443,8 +475,9 @@
                 it live</a>
             </div>
           </div>
-
         </div>
+        <p class="text-muted">Rocket Image used under the <a href="https://creativecommons.org/licenses/by-nc/4.0/"
+            target="_blank">Creative Commons License 4.0</a></p>
       </div>
     </section>
 
